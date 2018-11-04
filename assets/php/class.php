@@ -5,7 +5,7 @@ class getKey {
         $curl = curl_init();
         curl_setopt_array($curl, array(
             CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL => 'https://omsweb.public-safety-cloud.com/jtclientweb/(S())/jailtracker/index/'
+            CURLOPT_URL => 'https://omsweb.public-safety-cloud.com/jtclientweb/(S())//(S())/JailTracker/GetInmates?_dc=1541056454067&start=0&limit=28&sort=LastName&dir=ASC'
         ));
         $resp = curl_exec($curl);
         curl_close($curl);
