@@ -7,9 +7,7 @@ $apiKey = NEW getKey;
 
 $ch = curl_init();
 #$key = $apiKey->returnKey();
-#echo "First Key: ".$key."\n\n";
 $key = "oitmz0mgw3zsbyjq3kjc3ftn";
-// echo "Working Key: ".$key."\n\n";
 $URL = "https://omsweb.public-safety-cloud.com/jtclientweb/(S($key))//(S($key))/JailTracker/GetInmates?_dc=1541341516888&start=0&limit=28&sort=LastName&dir=ASC";
 // echo "$URL \n\n"; exit;
 curl_setopt($ch, CURLOPT_URL, "$URL");
